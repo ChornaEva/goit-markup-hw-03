@@ -1,0 +1,210 @@
+/* переменные****************************************** */
+:root {
+  --title-text-color: #212121;
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+/* шапка страницы *****************************************/
+.header {
+  background-color: #ffffff;
+}
+.nav-link.current {
+  color: var(--accent-color);
+}
+
+/* лого ***************************************************/
+.logo,
+.logo-white,
+.logo-black {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--accent-color);
+}
+.logo-white {
+  color: #ffffff;
+}
+.logo-black {
+  color: #000000;
+}
+
+/* навигация  и контакты INDEX  и PORTFOLIO**************************************/
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+}
+
+.contacts-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts-link {
+  color: #757575;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.contacts-list .contacts-link:hover,
+.contacts-list .contacts-link:focus {
+  color: var(--accent-color);
+}
+
+/* тело страницы ***************************************/
+/* банер ***********************************************/
+.section-baner {
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background: #2f303a;
+}
+.title-baner {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.baner-button {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: var(--accent-color);
+}
+
+/* секция преимущества **********************************/
+.advantages-title,
+.work-title,
+.team-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.advantages-title,
+.team-title {
+  color: var(--title-text-color);
+}
+
+.advantages-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.person-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* подвал страниц INDEX  и PORTFOLIO *******************************************/
+.footer {
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+  background: #2f303a;
+}
+
+.footer-adress {
+  font-style: normal;
+  color: #ffffff;
+}
+
+.footer-mail,
+.footer-tel {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-adress,
+.footer-mail,
+.footer-tel {
+  text-decoration: none;
+}
+
+.footer-adress:hover,
+.footer-adress:focus {
+  color: var(--accent-color);
+}
+.footer-mail:hover,
+.footer-mail:focus {
+  color: var(--accent-color);
+}
+
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--accent-color);
+}
+/* POTFOLIO********************************************************************* */
+
+.filter-button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background: var(--accent-color);
+  color: #ffffff;
+}
+.type-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.type-text {
+  font-size: 16px;
+  line-height: 1.8;
+}
