@@ -18,15 +18,52 @@ body {
   font-size: 36px;
   line-height: 1.16;
 }
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0px auto;
+}
 
+.section {
+  padding-top: 94px;
+}
 /* шапка страницы *****************************************/
-.header {
+.header .container {
   background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.nav-list {
+  display: flex;
 }
 .nav-link.current {
   color: var(--accent-color);
 }
 
+.nav-item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.contacts-list {
+  display: flex;
+}
+
+.header-tel {
+  margin-left: 50px;
+}
 /* лого ***************************************************/
 .logo,
 .logo-white,
@@ -37,6 +74,8 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  margin-left: 0px;
 }
 
 .logo {
@@ -50,6 +89,11 @@ body {
 }
 
 /* навигация  и контакты INDEX  и PORTFOLIO**************************************/
+.nav-list {
+  margin-left: 93px;
+  justify-content: space-between;
+}
+
 .nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -64,6 +108,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  margin-left: auto;
 }
 .contacts-link {
   color: #757575;
@@ -82,11 +128,11 @@ body {
 /* тело страницы ***************************************/
 /* банер ***********************************************/
 .section-baner {
-  width: 1600px;
-  height: 600px;
   left: 0px;
   top: 80px;
   background: #2f303a;
+
+  padding: 200px 0px;
 }
 .title-baner {
   font-weight: 900;
@@ -96,6 +142,11 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
 }
 .baner-button {
   font-family: inherit;
@@ -105,9 +156,26 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   background: var(--accent-color);
+
+  padding: 10px 32px;
+  border-radius: 4px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* секция преимущества **********************************/
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 .advantages-title,
 .work-title,
 .team-title {
@@ -128,6 +196,37 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-list {
+  display: flex;
+}
+
+.advantages-item:not(:first-child) {
+  margin-left: 30px;
+}
+.advantages-item {
+  width: 270px;
+}
+/* чем мы занимаемся************************************ */
+
+.works-title {
+  text-align: center;
+}
+
+.works-list {
+  display: flex;
+  justify-content: space-between;
+}
+/* секция команда**************************************** */
+.team-title {
+  text-align: center;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-item {
+  text-align: center;
+}
 .person-title {
   font-weight: 500;
   font-size: 16px;
@@ -140,11 +239,11 @@ body {
 
 /* подвал страниц INDEX  и PORTFOLIO *******************************************/
 .footer {
-  width: 1600px;
-  height: 252px;
   left: 0px;
   top: 2097px;
   background: #2f303a;
+
+  padding: 60px 0px;
 }
 
 .footer-adress {
@@ -176,6 +275,9 @@ body {
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--accent-color);
+}
+.footer-contacts {
+  margin-top: 20px;
 }
 /* POTFOLIO********************************************************************* */
 
